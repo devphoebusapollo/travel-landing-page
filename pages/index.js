@@ -37,8 +37,13 @@ export default function Home() {
       <section className='bg-[#232323] py-8'>
         <div className='w-1/3 m-0 mx-auto'>
           <h2 className='font-["Cardo"] text-[#e9e7e7] text-center font-bold text-5xl'>Create a memory to remember</h2>
-          <p className='text-[#e9e7e7] text-center py-5'>Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do ei usmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum sus pendisse ultrices gravida. </p>
-          
+          <p className='text-[#e9e7e7] text-center py-5 text-sm'>Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do ei usmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum sus pendisse ultrices gravida. </p>
+          <Link href="#"><button className='text-[#e9e7e7] py-1.5 px-12 rounded border-2 border-solid font-["Lato"] mt-4 mb-0 ml-auto mr-auto block'>My Travel Logs</button></Link>
+        </div>
+      </section>
+      <section>
+        <div>
+
         </div>
       </section>
     </div>
