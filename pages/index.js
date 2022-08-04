@@ -11,6 +11,7 @@ import Plane from "../assets/Airplace-Icon.png";
 import Tape from "../assets/taped-image.png";
 import Exposure from "../assets/Exposure.png";
 import Arrow from "../assets/Arrow.png";
+import Fourth from "../assets/4.png";
 
 export default function Home() {
   const ref = useRef(null);
@@ -168,6 +169,7 @@ export default function Home() {
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud.
                 </p>
+                <br />
                 <p className="text-justify font-['Lato'] leading-5">
                   exercitation ullamco laboris nisi ut aliquip ex ea commodo
                   consequat. Duis aute irure dolor in reprehenderit in voluptate
@@ -177,6 +179,36 @@ export default function Home() {
                   <Image src={Arrow} alt="" />
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#232323] py-32">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-[white] font-['Lato'] mx-auto">
+            <div className="float-right pl-10 mr-[-50px]">
+              <Image src={Fourth} alt="" />
+            </div>
+            <h2 className="font-['Cardo'] font-bold text-5xl">
+              Choose anywhere you’d like to be
+            </h2>
+            <div className="mt-10">
+              <h3 className="text-xl font-bold py-5">Lorem Ipsum dolor</h3>
+              <p className="font-['Lato'] text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                ei usmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in repre henderit in voluptate velit esse.
+              </p>
+              <h3 className="text-xl font-bold py-5">Lorem Ipsum dolor</h3>
+              <p className="font-['Lato'] text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                ei usmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in repre henderit in voluptate velit esse.
+              </p>
             </div>
           </div>
         </div>
