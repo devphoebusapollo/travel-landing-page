@@ -168,15 +168,14 @@ export default function Home() {
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud.
                 </p>
-                <br />
                 <p className="text-justify font-['Lato'] leading-5">
                   exercitation ullamco laboris nisi ut aliquip ex ea commodo
                   consequat. Duis aute irure dolor in reprehenderit in voluptate
                   velit esse cillum dolore eu fugiat nulla pariatur.
-                  <div className="text-right mt-12">
-                    <Image src={Arrow} alt="" />
-                  </div>
                 </p>
+                <div className="text-right mt-12">
+                  <Image src={Arrow} alt="" />
+                </div>
               </div>
             </div>
           </div>
