@@ -12,6 +12,8 @@ import Tape from "../assets/taped-image.png";
 import Exposure from "../assets/Exposure.png";
 import Arrow from "../assets/Arrow.png";
 import Fourth from "../assets/4.png";
+import Sitting from "../assets/Sitting.png";
+import Accordion from "../components/Accordion";
 
 export default function Home() {
   const ref = useRef(null);
@@ -209,6 +211,24 @@ export default function Home() {
                 nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                 in repre henderit in voluptate velit esse.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="py-28">
+        <div className="container mx-auto max-w-6xl">
+          <div className="float-right m-0">
+            <Image src={Sitting} alt="" />
+          </div>
+          <div className="w-[60%]">
+            <h2 className="font-['Cardo'] text-7xl font-bold">
+              Lorem ipsum dolor sit amet consectetur
+            </h2>
+            <div className="m-0">
+              <Accordion />
+              <Accordion />
+              <Accordion />
+              <Accordion />
             </div>
           </div>
         </div>
