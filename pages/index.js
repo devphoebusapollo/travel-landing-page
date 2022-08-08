@@ -14,7 +14,7 @@ import Arrow from "../assets/Arrow.png";
 import Fourth from "../assets/4.png";
 import Sitting from "../assets/Sitting.png";
 import Accordion from "../components/Accordion";
-import Sample from "./Sample";
+import Testimonials from "../components/Testimonials";
 
 export default function Home() {
   const ref = useRef(null);
@@ -238,7 +238,7 @@ export default function Home() {
         <div className="container mx-auto max-w-6xl my-8">
           <h1 className="font-['Cardo'] text-7xl font-bold w-[50%] text-center mx-auto">Here's what they have to say...</h1>
         </div>
-        <Sample/>
+        <Testimonials/>
       </section>
     </div>
   );
