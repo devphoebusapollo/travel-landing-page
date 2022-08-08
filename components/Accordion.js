@@ -10,7 +10,7 @@ export default function () {
         className="p-3 border-solid border-black border-y-2"
         onClick={() => setIsOpen((prev) => !prev)}
       >
-        <p>
+        <div>
           Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do ei
           usmod
           {isOpen ? (
@@ -18,7 +18,7 @@ export default function () {
           ) : (
             <motion.p className="float-right font-bold">+</motion.p>
           )}
-        </p>
+        </div>
       </motion.div>
       <AnimatePresence>
         {isOpen ? (

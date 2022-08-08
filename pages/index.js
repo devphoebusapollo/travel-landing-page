@@ -14,6 +14,7 @@ import Arrow from "../assets/Arrow.png";
 import Fourth from "../assets/4.png";
 import Sitting from "../assets/Sitting.png";
 import Accordion from "../components/Accordion";
+import Sample from "./Sample";
 
 export default function Home() {
   const ref = useRef(null);
@@ -188,7 +189,7 @@ export default function Home() {
       <section className="bg-[#232323] py-32">
         <div className="container mx-auto max-w-6xl">
           <div className="text-[white] font-['Lato'] mx-auto">
-            <div className="float-right pl-10 mr-[-50px]">
+            <div className="float-right pl-10 mr-[-50px] max-w-full">
               <Image src={Fourth} alt="" />
             </div>
             <h2 className="font-['Cardo'] font-bold text-5xl">
@@ -224,7 +225,7 @@ export default function Home() {
             <h2 className="font-['Cardo'] text-7xl font-bold">
               Lorem ipsum dolor sit amet consectetur
             </h2>
-            <div className="m-0">
+            <div className="my-12">
               <Accordion />
               <Accordion />
               <Accordion />
@@ -232,6 +233,12 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+      <section>
+        <div className="container mx-auto max-w-6xl my-8">
+          <h1 className="font-['Cardo'] text-7xl font-bold w-[50%] text-center mx-auto">Here's what they have to say...</h1>
+        </div>
+        <Sample/>
       </section>
     </div>
   );
