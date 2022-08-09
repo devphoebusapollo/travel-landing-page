@@ -15,6 +15,7 @@ import Fourth from "../assets/4.png";
 import Sitting from "../assets/Sitting.png";
 import Accordion from "../components/Accordion";
 import Testimonials from "../components/Testimonials";
+import Form from "../assets/form-image.png";
 
 export default function Home() {
   const ref = useRef(null);
@@ -236,10 +237,119 @@ export default function Home() {
       </section>
       <section>
         <div className="container mx-auto max-w-6xl my-8">
-          <h1 className="font-['Cardo'] text-7xl font-bold w-[50%] text-center mx-auto">Here's what they have to say...</h1>
+          <h1 className="font-['Cardo'] text-7xl font-bold w-[50%] text-center mx-auto">
+            Here's what they have to say...
+          </h1>
         </div>
-        <Testimonials/>
+        <Testimonials />
       </section>
+      <section className="py-28">
+        <div className="container mx-auto max-w-6xl flex justify-between">
+          <div className="w-[40%]">
+            <form className="flex flex-col justify-center w-full">
+              <h2 className="font-['Cardo'] text-7xl font-bold text-center mb-8">
+                Be updated!
+              </h2>
+              <input
+                type="text"
+                name="firstName"
+                placeholder="First Name*"
+                className="font-['Lato'] border-solid border-2 border-[#232323] rounded px-6 py-2 mb-4"
+                required
+              />
+              <input
+                type="text"
+                name="lastName"
+                placeholder="Last Name*"
+                className="font-['Lato'] border-solid border-2 border-[#232323] rounded px-6 py-2 mb-4"
+                required
+              />
+              <input
+                type="text"
+                name="subjext"
+                placeholder="Email Subject*"
+                className="font-['Lato'] border-solid border-2 border-[#232323] rounded px-6 py-2 mb-4"
+                required
+              />
+              <textarea
+                name="emailContent"
+                placeholder="Write something here..."
+                className="font-['Lato'] border-solid border-2 border-[#232323] rounded px-6 py-2 mb-4"
+                rows={11}
+              />
+              <button type="Submit" className="bg-dark rounded text-white py-2">
+                Send Email
+              </button>
+            </form>
+          </div>
+          <div className="w-[50%]">
+            <Image src={Form} alt="" />
+          </div>
+        </div>
+      </section>
+      <footer className=" bg-[#c4c4c4] py-16">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex justify-around mx-auto container">
+            <h2 className="text-5xl font-bold font-['Cardo'] w-[20%]">
+              My Log Travels
+            </h2>
+            <div className="w-[80%] mx-auto container">
+              <div className="flex justify-around items-end mx-auto leading-loose">
+                <div>
+                  <h2 className="font-bold">Quick Links</h2>
+                  <ul>
+                    <Link href="#">
+                      <li>Home</li>
+                    </Link>
+                    <Link href="#">
+                      <li>About Us</li>
+                    </Link>
+                    <Link href="#">
+                      <li>My Travel Logs</li>
+                    </Link>
+                  </ul>
+                </div>
+                <ul>
+                  <Link href="#">
+                    <li>Travels</li>
+                  </Link>
+                  <Link href="#">
+                    <li>Promo Flights</li>
+                  </Link>
+                  <Link href="#">
+                    <li>Travel Routes</li>
+                  </Link>
+                </ul>
+                <ul>
+                  <Link href="#">
+                    <li>Recommendations</li>
+                  </Link>
+                  <Link href="#">
+                    <li>Guides</li>
+                  </Link>
+                  <Link href="#">
+                    <li>Blogs</li>
+                  </Link>
+                </ul>
+                <ul>
+                  <Link href="#">
+                    <li>Mission Statement</li>
+                  </Link>
+                  <Link href="#">
+                    <li>The Team</li>
+                  </Link>
+                  <Link href="#">
+                    <li>Contact Us</li>
+                  </Link>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <h2 className="text-center mt-16 font-['Lato'] box-border">
+            2021 - 2022 My Log Travels. All Rights Reserved.
+          </h2>
+        </div>
+      </footer>
     </div>
   );
 }
